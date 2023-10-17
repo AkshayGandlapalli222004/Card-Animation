@@ -1,0 +1,35 @@
+.card-group{
+    max-width:  3000px;
+    display:flex;
+    padding : 50px;
+    overflow-x: scroll;
+    align-items: center;
+}
+
+.col{
+    color:aquamarine;
+}
+
+.card{
+    flex: 0 0 300px;
+    display:flex;
+    flex-direction:row;
+    height: 300px;
+    background-image: Linear-gradient(85deg,#434343,#262626);
+    padding:32px;
+    box-shadow: -16px 0 32px rgba(30, 30, 45, 0.5);
+    border-radius: 8px;
+    transition: transform 250ms;
+}
+
+.card:not(:first-child){
+    margin-left: -130px;
+}
+
+.card:hover{
+    transform: translate(-8px,-16px) rotate(10deg);
+}
+
+.card:hover ~ .card{
+    transform : translateX(130px);
+}
